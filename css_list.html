@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*
+    list-style-type     (if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot be displayed)
+    list-style-position (specifies whether the list-item markers should appear inside or outside the content flow)
+    list-style-image    (specifies an image as the list item mark
+*/
+ul.a {
+  list-style-type: circle;         /* shape of the list items */
+  list-style-position: outside;    /* using outside or inside for position of the list items */
+  color:red;                     /* color the list items */
+ 
+}
+
+ul.b {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+ul {
+  
+  list-style-image: url('ball.jpg');     /* Using image for the items*/
+
+}
+</style>
+</head>
+<body>
+
+<h2>The list-style-type Property</h2>
+
+<p>Example of unordered lists:</p>
+<ul class="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Example of ordered lists:</p>
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+<br/>
+
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>
+
+
