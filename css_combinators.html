@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*
+
+    descendant selector (space) 
+    child selector (>)
+    adjacent sibling selector (+)
+    general sibling selector (~)
+
+*/
+/* descendant selector (space) */
+div p {                          /* The space between div and p is indicate the div use <p> tag and section inside <p> tag are same to fill the color */
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>Descendant Selector</h2>
+
+<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>  <!-- this <p> tag also include above div because giving space between div and p-->
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+</body>
+</html>
+
+
