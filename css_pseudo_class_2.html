@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*
+    The :first-child pseudo-class matches a specified element that is the first child of another element.
+    In the following example, the selector matches any <p> element that is the first child of any element.
+*/
+p:first-child {
+  color: blue;
+} 
+p i:first-child {      /* Every <p> tag have <i> tag then first <i> only color too many <i> not color only first <i> colored  */
+  color: blue;
+} 
+
+</style>
+</head>
+<body>
+
+<p>This is some text.</p>
+<p>This is some text.</p>
+
+<div>
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+</div><br/>
+
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p><br/>
+
+
+
+
+  
+
+
+</body>
+</html>
+
+

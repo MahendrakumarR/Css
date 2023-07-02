@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a.highlight:hover {                      /* here your mouse on the particular link that link change color and size then move the mouse see original style */
+  color: #ff0000;
+  font-size: 22px;
+} 
+
+#o {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+ 
+div:hover #o {                           /* here your mouse on the div then below show p(o) tag contet otherwise not show*/
+  display: block;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Pseudo-classes and HTML Classes</h2>
+
+<p>When you hover over the first link below, it will change color and font size:</p>
+
+<p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+
+<p><a href="default.asp">CSS Tutorial</a></p><br/>
+
+<div>Hover over this div element to show the p element
+    <p id="o">Tada! Here I am!</p>                          <!--This show when mose on the div element-->
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* The ::first-line pseudo-element is used to add a special style to the first line of a text */
+
+/*
+    The ::first-line pseudo-element can only be applied to block-level elements
+    
+    font properties
+    color properties
+    background properties
+    word-spacing
+    letter-spacing
+    text-decoration
+    vertical-align
+    text-transform
+    line-height
+    clear
+
+*/
+p.n::first-line {                /* This used for only one line effect */
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+#f::first-letter {            /* This used for only one letter effect*/
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+h1::before {                /* Also used ::after*/     /* This used for before image then text */
+  content: url(ball.png);   
+  
+}
+ 
+::marker {                /*This works in list*/  /* Marker are used for bullets and seriels of list*/
+  color: red;
+  font-size: 23px;
+}
+
+/*
+    The ::selection pseudo-element matches the portion of an element that is selected by a user.
+    The following CSS properties can be applied to ::selection: color, background, cursor, and outline.
+*/
+
+div::selection {            /* selection are used only for <div></div> not <p> select the text changed color. text-red, track-yellow */ 
+  color: red;
+  background: yellow;
+}
+
+</style>
+</head>
+<body>
+
+
+<p class="n">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. 
+    And even more, and more, and more, and more, and more, 
+    and more, and more, and more, and more, and more, and more, and more.
+</p><br/>
+<p id="f">You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+
+<h1>This is a heading</h1><br/>
+
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+  
+<ol>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+</ol>
+
+
+<div class="s">This is some text in a div element.
+    <p>This is a paragraph.</p>
+</div>
+
+</body>
+</html>
+
+
