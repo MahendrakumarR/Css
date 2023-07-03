@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* 
+
+    The [attribute] selector is used to select elements with a specified attribute.
+
+*/
+
+a[target] {                    /* All target used yellow */     /* where target used that one only use this color background*/
+  background-color: yellow;
+}
+
+a[target="_blank"] {               /* here specify the particular link color. already use yellow for all target so here yellow and red are combainedS  */
+  background-color: rgb(88, 5, 23);
+}
+</style>
+</head>
+<body>
+
+<h2>CSS [attribute] Selector</h2>
+<p>The links with a target attribute gets a yellow background:</p>
+
+<a href="https://www.github.com">GitHub.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>      <!-- here red color -->
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>  <!--Target are used then use the effect-->
+
+</body>
+</html>
+
+

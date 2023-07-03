@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+/*
+    An image sprite is a collection of images put into a single image.
+    A web page with many images can take a long time to load and generates multiple server requests.
+    Using image sprites will reduce the number of server requests and save bandwidth.
+*/
+
+#home {
+  width: 46px;
+  height: 44px;
+  background: url(home.png) 0 0;
+}
+
+#re {
+  width: 43px;
+  height: 44px;
+  background: url(home.png) -91px 0;
+}
+</style>
+</head>
+<body>
+
+<img id="home" src="home.png" width="1" height="1">
+<img id="re" src="reload.png" width="1" height="1">
+
+</body>
+</html>
+
+
+
