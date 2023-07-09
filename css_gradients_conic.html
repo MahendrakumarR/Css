@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*
+    A conic gradient is a gradient with color transitions rotated around a center point.
+    To create a conic gradient you must define at least two colors.
+*/
+#grad1 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green);
+}
+
+/*
+    Create Pie Charts
+    Just add border-radius: 50% to make the conic gradient look like a pie:
+*/
+.picrt {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green, blue, black);
+  border-radius: 50%;
+}
+/*
+    Degree
+*/
+.degree{
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+  border-radius: 50%;
+}
+/*
+    The [from angle] specifies an angle that the entire conic gradient is rotated by.
+    The following example shows a conic gradient with a from angle of 90deg:
+*/
+.from {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(from 90deg, red, yellow, green);
+  border-radius: 50%;
+}
+/*
+    The [at position] specifies the center of the conic gradient.
+    The following example shows a conic gradient with a center position of 60% 45%:
+*/
+.at{
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(at 60% 45%, red, yellow, green);
+  border-radius: 50%;
+}
+/*
+    The repeating-conic-gradient() function is used to repeat conic gradients:
+*/
+.rpt{
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<h1>Conic Gradient - Three Colors</h1>
+
+<div id="grad1"></div><br/>
+
+<h1>Conic Gradient - Pie Chart</h1>
+
+<div class="picrt"></div><br/>
+
+<h1>Conic Gradient - Degree</h1>
+
+<div class="degree"></div><br/>
+
+<h1>Conic Gradient - With a from angle</h1>
+
+<div class="from"></div><br/>
+
+<h1>Conic Gradient - With a specified center position</h1>
+
+<div class="at"></div><br/>
+
+<h1>Repeating a Conic Gradient with color-starts and -stops</h1>
+
+<div class="rpt"></div>
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/*
+    CSS gradients let you display smooth transitions between two or more specified colors.
+    CSS defines three types of gradients:
+
+        Linear Gradients (goes down/up/left/right/diagonally)
+        Radial Gradients (defined by their center)
+        Conic Gradients (rotated around a center point)
+*/
+
+/*
+  Direction - Top to Bottom (this is default)
+*/
+#grad {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);
+}
+/*
+  Direction - Left to Right
+*/
+.lfttorht {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red , yellow);
+}
+/*
+  Direction - Diagonal
+*/
+.dgnl {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+/*
+  instead of the predefined directions (to bottom, to top, to right, to left, to bottom right, etc.). 
+  A value of 0deg is equivalent to "to top". A value of 90deg is equivalent to "to right". 
+  A value of 180deg is equivalent to "to bottom".
+*/
+#grad1 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(0deg, red, yellow);
+}
+
+#grad2 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(90deg, red, yellow);
+}
+
+#grad3 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(180deg, red, yellow);
+}
+
+#grad4 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(-90deg, red, yellow);
+}
+
+.rain{
+  height: 55px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+.rpt{
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(45deg, red , green,orange, yellow, white);
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradient - Top to Bottom</h1>
+<p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+
+<div id="grad"></div><br/>
+
+<h1>Linear Gradient - Left to Right</h1>
+<p>This linear gradient starts red at the left, transitioning to yellow (to the right):</p>
+
+<div class="lfttorht"></div><br/>
+
+<h1>Linear Gradient - Diagonal</h1>
+<p>This linear gradient starts red at top left, transitioning to yellow (at bottom right):</p>
+
+<div class="dgnl"></div><br/>
+
+<h1>Linear Gradients - Using Different Angles</h1>
+
+<div id="grad1" style="text-align:center;">0deg</div><br>
+<div id="grad2" style="text-align:center;">90deg</div><br>
+<div id="grad3" style="text-align:center;">180deg</div><br>
+<div id="grad4" style="text-align:center;">-90deg</div><br/>
+
+<div class="rain" style="text-align:center;">Rainbow Background</div>
+
+<p>A repeating linear gradient with solid stripes:</p>
+<div class="rpt"></div>
+
+</body>
+</html>
+
+
+
