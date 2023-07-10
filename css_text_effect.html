@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/*
+In this chapter you will learn about the following properties:
+
+    text-justify - Specifies how justified text should be aligned and spaced
+    text-overflow - Specifies how overflowed content that is not displayed should be signaled to the user
+    word-break - Specifies line breaking rules for non-CJK scripts
+    word-wrap - Allows long words to be able to be broken and wrap onto the next line
+    writing-mode - Specifies whether lines of text are laid out horizontally or vertically
+*/
+ 
+p.test1 {
+  white-space: nowrap; 
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;                        /* Extra lines are hide*/
+  text-overflow: clip;                     /* clip not fit inside the border */
+}
+
+p.test2 {
+  white-space: nowrap; 
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;              /* ellipsis fit inside the border */
+}
+div.test {
+  white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden;                     /* Extra lines are hide*/
+  border: 1px solid #000000;
+}
+
+div.test:hover {
+  overflow: visible;                    /* show Extra lines are hide*/
+}
+
+p.wrap {                            
+  width: 130px; 
+  border: 1px solid #000000;
+  word-wrap: break-word;               /* break the words when touch the border */
+}
+
+p.horiz {
+  writing-mode: horizontal-tb; 
+}
+
+span.vertical1{
+  writing-mode: vertical-rl; 
+}
+
+p.vertical2{
+  writing-mode: vertical-rl; 
+}
+</style>
+</head>
+<body>
+
+<h1>The text-overflow Property</h1>
+<p>The following two paragraphs contains a long text that will not fit in the box.</p>
+
+<h2>text-overflow: clip:</h2>
+<p class="test1">This is some long text that will not fit in the box</p>
+
+<h2>text-overflow: ellipsis:</h2>
+<p class="test2">This is some long text that will not fit in the box</p><br/>
+
+<div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+<br>
+<div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div><br/>
+
+<p class="wrap">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p><br/>
+
+<p class="horiz">Some text with default writing-mode.</p>
+
+<p>Some text with a span element with a <span class="vertical1">vertical-rl</span> writing-mode.</p>
+
+<p class="vertical2">Some text with writing-mode: vertical-rl.</p>
+
+
+</body>
+</html>
+
+

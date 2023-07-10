@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+/*
+With the CSS transform property you can use the following 2D transformation methods:
+
+    translate() - The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis)
+    rotate() - The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.
+    scale() -- The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).
+    scaleX() - The scaleX() method increases or decreases the width of an element.
+    scaleY() - The scaleY() method increases or decreases the height of an element.    
+    skewX() - The skewX() method skews an element along the X-axis by the given angle.
+    skewY() - The skewY() method skews an element along the Y-axis by the given angle.
+    skew() - The skew() method skews an element along the X and Y-axis by the given angles.
+    matrix() - The matrix() method combines all the 2D transform methods into one.
+*/
+
+.translate{ 
+  margin-top: 0px;
+  margin-bottom: 100px;
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(50px,100px);     /* translate used to change the position of the border content */      
+}
+.rotate{
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: rotate(20deg);             /* rotate 20 degree */
+  margin: 100px;
+}
+.scale{
+  margin: 100px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(2,3);                    /* scale used for (2,3) width , height*/
+}
+.scaleX{
+  margin: 100px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleX(2);
+}
+.scaleY{
+  margin: 100px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleY(3);
+}
+.skewX{
+  margin: 100px;
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: skewX(20deg);
+}
+.skewY{
+  margin: 100px;
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: skewY(20deg);
+}
+.skew{
+  margin: 100px;
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: skew(20deg,10deg);
+}
+.matrix{
+  margin: 100px;
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+</style>
+</head>
+<body>
+
+<div class="translate">
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div><br/>
+
+<p class="rotate">
+This div element is rotated clockwise 20 degrees.
+</p><br/>
+
+<div class="scale">
+This div element is two times of its original width, and three times of its original height.
+</div><br/>
+
+<div class="scaleX">
+    This div element is two times of its original width.
+</div><br/>
+
+<div class="scaleY">
+    This div element is three times of its original height.
+</div><br/>
+
+<div class="skewX">
+    This div element is skewed 20 degrees along the X-axis.
+</div><br/>
+
+<div class="skewY">
+    This div element is skewed 20 degrees along the Y-axis.
+</div><br/>
+
+<div class="skew">
+    This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+</div><br/>
+
+<div class="matrix">
+    Using the matrix() method.
+</div>
+
+</body>
+</html>
+
+
