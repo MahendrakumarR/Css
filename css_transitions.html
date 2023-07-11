@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+/*
+To create a transition effect, you must specify two things:
+
+    the CSS property you want to add an effect to
+    the duration of the effect
+
+Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.
+*/
+/*
+
+    transition
+    transition-delay
+    transition-duration
+    transition-property
+    transition-timing-function
+
+*/
+ /*
+ The transition-timing-function property specifies the speed curve of the transition effect.
+
+The transition-timing-function property can have the following values:
+
+    ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+    linear - specifies a transition effect with the same speed from start to end
+    ease-in - specifies a transition effect with a slow start
+    ease-out - specifies a transition effect with a slow end
+    ease-in-out - specifies a transition effect with a slow start and end
+    cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+
+ */
+.transi{
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+  background: red;
+  transition: width 2s, height 2s;      /* here width and height are same time increase when mouse in the color*/
+}
+
+.transi:hover {
+  width: 100px;
+  height: 100px;
+  
+}
+
+/*
+    Specify the Speed Curve of the Transition
+*/
+
+.linear{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+  transition-timing-function: linear;
+}
+.ease{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+  transition-timing-function: ease;
+}
+.ease-in{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+  transition-timing-function: ease-in;
+}
+.ease-out{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+  transition-timing-function: ease-out;
+}
+.ease-in-out{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+  transition-timing-function: ease-in-out;
+}
+
+/*
+    Delay the Transition Effect
+*/
+.delay {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 3s;
+  transition-delay: 1s;              /* This is for delay to imorve size when over the mouse*/
+  transition-duration: 5s;          /* This is for duration of the transition taken*/
+}
+
+div:hover {            /* This is for all <div> elements */
+  width: 300px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<p class="transi"></p>
+
+<div class="linear">linear</div><br>
+<div class="ease">ease</div><br>
+<div class="ease-in">ease-in</div><br>
+<div class="ease-out">ease-out</div><br>
+<div class="ease-in-out">ease-in-out</div><br>
+
+<div class="delay">Delay</div><br/>
+
+</body>
+</html>
+
+
+
+
+

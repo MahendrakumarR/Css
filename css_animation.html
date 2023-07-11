@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+/*
+    An animation lets an element gradually change from one style to another.
+    You can change as many CSS properties you want, as many times as you want.
+    To use CSS animation, you must first specify some keyframes for the animation.
+    Keyframes hold what styles the element will have at certain times.
+*/
+/*
+    @keyframes
+    animation-name
+    animation-duration
+    animation-delay
+    animation-iteration-count
+    animation-direction
+    animation-timing-function
+    animation-fill-mode
+    animation
+*/
+
+div {
+  width: 100px;
+  height: 100px; 
+  background-color: red;                    /*Original color is red*/
+  animation-name: example;
+  animation-duration: 3s;
+}
+
+@keyframes example {
+    from {
+        background-color: green;        /* Starting with green color */
+    }    
+
+    to{
+        background-color: lightblue;     /* Ending with lightblue color */
+    }        
+}
+
+.another {                        /* This is another method for above code */
+  width: 100px;
+  height: 100px; 
+  background-color: rgb(10, 10, 10);                    /*Original color is red*/
+  animation-name: another;
+  animation-duration: 3s;
+}
+@keyframes another {
+  0%   {background-color: rgb(10, 10, 10);}
+  25%  {background-color: rgb(48, 48, 43);}
+  50%  {background-color: rgb(90, 90, 129);}
+  100% {background-color: rgb(80, 180, 80);}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p><br/>
+
+<p class="another"></p>
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>
+
+
