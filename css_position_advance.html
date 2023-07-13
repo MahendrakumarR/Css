@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*
+    The CSS object-position property is used to specify how an <img> or <video> should be positioned within its container.
+*/
+/*
+    Let's say that the part of the image that is shown, is not positioned as we want. 
+    To position the image, we will use the object-position property.
+*/
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 20% 100%;   /* This is for particular area only show*/
+}
+</style>
+</head>
+<body>
+
+<h2>Using object-position</h2>
+
+<p>Here we will use the object-position property to position the image so that the great old building is in center:</p>
+
+<img src="image.jpg" alt="Paris" width="400" height="300">
+
+</body>
+</html>
+
+
