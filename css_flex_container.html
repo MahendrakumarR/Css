@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*
+    align-content   - Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines
+    align-items     - Vertically aligns the flex items when the items do not use all available space on the cross-axis
+    display         - Specifies the type of box used for an HTML element
+    flex-direction  - Specifies the direction of the flexible items inside a flex container
+    flex-flow       - A shorthand property for flex-direction and flex-wrap
+    flex-wrap       - Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
+    justify-content - Horizontally aligns the flex items when the items do not use all available space on the main-axis
+*/
+
+.flex-container {
+  display: flex;                       /* column used for the numbers show in first column only */
+  flex-direction: column;             /* Also used 'column-reverse' and 'row' and 'row-reverse' */
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* The flex-wrap property specifies whether the flex items should wrap or not */
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;                             /* Also used 'nowrap'and 'wrap-reverse' */
+  background-color: rgb(96, 145, 19);
+}
+
+.wrap > div{
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The flex-direction Property</h1>
+
+<p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div><br/>
+
+<p>The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</p>
+
+<div class="wrap">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>  
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>  
+</div>
+
+<p>Try resizing the browser window.</p>
+
+</body>
+</html>
+
+
